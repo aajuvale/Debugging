@@ -12,10 +12,9 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        print("This is inside the viewDidLoad() method")
-        print(1, 2, 3, 4, 5, separator: "-")
-
-        print("Some message", terminator: "")
+        // Assertions get removed entirely when building app for app store
+        assert(1 == 1, "Math failure!")
+        assert(1 == 2, "Math failure!")
     }
 
 
